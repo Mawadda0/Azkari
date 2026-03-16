@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="hero">
+        <h1>Welcome to Azkari</h1>
+        <p>Your daily remembrance companion</p>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <h2>Morning Azkar</h2>
+            <p>Start your day with remembrance.</p>
+            <a href="{{ url_for('morning') }}" class="card-btn" target="_blank">View</a>
+        </div>
+
+        <div class="card">
+            <h2>Evening Azkar</h2>
+            <p>End your day with remembrance.</p>
+            <a href="{{ url_for('evening') }}" class="card-btn" target="_blank">View</a>
+        </div>
+
+        <div class="card">
+            <h2>Tasbeeh</h2>
+            <p>Remember Allah anytime.</p>
+            <a href="{{ url_for('tasbeeh') }}" class="card-btn" target="_blank">View</a>
+        </div>
+    </div>
+
+{% endblock %}

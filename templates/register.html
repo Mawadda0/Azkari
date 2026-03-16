@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='logreg.css') }}">
+    <script src="{{ url_for('static', filename='motions.js') }}"></script>
+    <link rel="preload" href="{{ url_for('static', filename='mymos.jpg') }}" as="image">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='moon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center-image"></div>
+
+    <div class="main-content">
+        <form class="form" method="POST" action="{{ url_for('register') }}">
+            <h2>Register</h2>
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirmation" placeholder="Confirmation">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

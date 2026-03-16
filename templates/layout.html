@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Azkari" }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cards.css') }}">
+    <script src="{{ url_for('static', filename='motions.js') }}"></script>
+    <link rel="preload" href="{{ url_for('static', filename='mymos.jpg') }}" as="image">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='moon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="center-image"></div>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="{{ url_for('home') }}">Azkari</a>
+        </div>
+        <div class="navbar-right">
+            <a href="{{ url_for('logout') }}">
+               Logout
+               <img src="{{ url_for('static', filename='logout.png') }}" class="icon">
+            </a>
+        </div>
+    </nav>
+
+    <div>
+        {% block main %}
+        
+        {% endblock %}
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>
+                Made with <span class="heart">🤍</span> for <strong>CS50x</strong>,
+                        <a href="https://github.com/Mawadda0" target="_blank" class="github-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+                    Check my GitHub
+                </a>
+            </p>
+        </div>
+        <p class="charity-note">
+        صدقة جارية عني وعن والداي وأهلي أجمعين.
+        </p>
+    </footer>
+
+</body>
+</html>
