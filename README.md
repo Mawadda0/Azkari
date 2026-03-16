@@ -45,10 +45,6 @@
 ## User Login & Logout
 - User authentication is done by comparing input passwords with hashed passwords in the database.
 - Logout clears the session and redirects to the homepage.
-
+  
 ---
-## [Video demo](https://cs50.harvard.edu/x/)
-
----
-## CS50 Certificate
-[CS50 Certificate](https://cs50.harvard.edu/x/)
+## [CS50 Certificate 😋](https://certificates.cs50.io/aab8a235-8a70-43a8-a3eb-67fcde0fb13b.png?size=letter)
