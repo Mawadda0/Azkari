@@ -21,25 +21,33 @@
 
 
 ---
+## ⚙️ Setup Instructions
 
-## Local Setup
-1. Make sure Python 3.10+ is installed.
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # Linux/Mac
-   venv\Scripts\activate      # Windows
+#### Follow these steps to run the project locally:
 
-3. Install dependencies:
-   ```bash
-   pip install Flask werkzeug
+1. Install Python, Make sure Python 3.10+ is installed.
 
-4. Run the server:
+2. Install pip
 
-   ```bash
-   flask run
+```bash
+python -m ensurepip --upgrade
+```
 
-5. Open your browser and go to the link displayed in the terminal.
+3. Install required libraries
+
+```bash
+pip install flask flask-session cs50 werkzeug
+```
+
+5. Run the application
+
+```bash
+flask run
+```
+
+6. Open your browser and go to the link displayed in the terminal.
+
+#### if you are facing any problem at running locally after followin the steps, make sure that every file matches the right place in the repository.
 
 ---
 ## User Login & Logout
