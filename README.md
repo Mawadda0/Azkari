@@ -23,11 +23,11 @@
 ---
 ## ⚙️ Setup Instructions
 
-#### Follow these steps to run the project locally:
+#### Follow these steps to run the project locally (don't worry it's so simple):
 
 1. Install Python, Make sure Python 3.10+ is installed.
 
-2. Install pip
+2. open your visual studio terminal, and Install pip
 
 ```bash
 python -m ensurepip --upgrade
