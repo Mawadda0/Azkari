@@ -2,6 +2,11 @@
 
 **Azkari** is a web application designed to make daily dhikr, easier by displaying Arabic texts and allowing users to count repetitions of each dhikr using digital counters. The project uses **Flask**, **HTML/CSS/JS**, and **SQLite**.
 
+![GUI](static/represent_1.jfif)
+
+![GUI](static/represent_2.jfif)
+
+
 ---
 ## Features
 - Clean and user-friendly interface.
